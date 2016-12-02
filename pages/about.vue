@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  data ({ req }) {
+  data () {
     return {
       name: 'Dan Gamble'
     }
