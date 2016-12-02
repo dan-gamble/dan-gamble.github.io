@@ -11,8 +11,8 @@
 <script>
   import marked from 'marked'
 
-  import OGCard from '../../components/OGCard.vue'
-  import TwitterCard from '../../components/TwitterCard.vue'
+  import OGCard from '../components/OGCard.vue'
+  import TwitterCard from '../components/TwitterCard.vue'
 
   export default {
     name: 'Article',
@@ -54,7 +54,7 @@
         const slug = this.$route.params.slug
 
         try {
-          this.article = require(`../../articles/${slug}/index.js`)
+          this.article = require(`../articles/${slug}/index.js`)
         } catch (e) {
           console.log(e)
           return 'Article not found'
