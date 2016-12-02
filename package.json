@@ -13,7 +13,7 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "deploy": "yarn run generate && echo www.dangamble.co.uk > dist/CNAME; push-dir --dir=dist --branch=master --cleanup"
+    "deploy": "push-dir --dir=dist --branch=master --cleanup"
   },
   "devDependencies": {
     "html-loader": "^0.4.4",
